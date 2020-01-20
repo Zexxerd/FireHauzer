@@ -1,0 +1,36 @@
+; Zilog eZ80 ANSI C Compiler Release 3.4
+; -optsize -noreduceopt -nomodsect -peephole -globalopt
+; -localcse -const=ROM 
+	FILE	"SRC\GAME.C"
+	.assume ADL=1
+;    1	//Subprogram!
+;    2	
+;    3	/* Keep these headers */
+;    4	#include <tice.h>
+;    5	
+;    6	/* Standard headers - it's recommended to leave them included */
+;    7	#include <math.h>
+;    8	#include <stdio.h>
+;    9	#include <stdlib.h>
+;   10	#include <string.h>
+;   11	
+;   12	#include <assert.h>
+;   13	
+;   14	#include <graphx.h>
+;   15	#include <keypadc.h>
+;   16	
+;   17	#include "entity.h"
+;   18	
+;   19	typedef struct {
+;   20	    gfx_sprite_t * image;
+;   21	    char * description;
+;   22	} item;
+;   23	typedef struct {
+;   24	    int health;
+;   25	    int money;
+;   26	    uint8_t cur_item;
+;   27	    uint8_t cur_weapon;
+;   28	    uint16_t amm;
+;   29	    entity * objects;
+;   30	} game;
+	END
